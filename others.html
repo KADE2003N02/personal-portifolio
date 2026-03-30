@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kade | Portfolio</title>
+    <title>Others | David KWIZERA Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -25,62 +25,56 @@
         <div class="hamburger" id="hamburger">☰</div>
     </nav>
 
-    <!-- HOME -->
-    <section id="home">
+    <!-- OTHERS HERO -->
+    <section id="others">
         <video class="home-video" autoplay muted loop playsinline>
             <source src="media/kiaglicity.mp4" type="video/mp4">
         </video>
         <div class="home-overlay"></div>
         <div class="home-wrapper">
             <div class="home-content">
-                <h1 class="glitch" data-text="I'm Kade">I'm David KWIZERA!</h1>
-                <p class="subtitle">Computer Science Student &nbsp;|&nbsp; Frontend Developer</p>
-                <p class="intro">I build responsive and modern web interfaces. Turning ideas into clean, user-friendly experiences through code.</p>
-                <div class="btn-group">
-                    <a href="background.html" class="btn">My Background</a>
-                    <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-                </div>
+                <h1 class="glitch" data-text="Documents">Documents</h1>
+                <p class="subtitle">CV &nbsp;|&nbsp; Files &nbsp;|&nbsp; Resources</p>
+                <p class="intro">Access my CV, portfolio documents, and other important files.</p>
             </div>
         </div>
     </section>
 
-    <!-- QUICK INTRO -->
+    <!-- OTHERS CONTENT -->
     <section style="padding: 30px 40px; max-width: 900px; margin: 0 auto;">
+        <h2 class="section-title"><span class="prompt"></span> Documents & Portfolio</h2>
+        
+        <div class="card" style="margin-bottom: 20px;">
+            <h3 style="color: var(--accent); margin-bottom: 12px;">My Professional Materials</h3>
+            <p>Below you'll find my Curriculum Vitae, cover letters, project documentation, and other professional materials. Feel free to download, review, or preview them directly. These documents provide detailed insights into my educational background, work experience, projects, and qualifications.</p>
+        </div>
+
         <div class="card">
-            <h2 class="section-title" style="margin-top: 0;"><span class="prompt"></span> Welcome to My Portfolio</h2>
-            <p>Hi! I'm David KWIZERA, a Computer Science student at the University of Rwanda with a passion for building elegant solutions to complex problems. This portfolio showcases my journey in web development, software engineering, and my commitment to continuous learning.</p>
-            <p>Navigate through the sections above to explore my background, skills, projects, and ways to get in touch. Each page tells a different part of my story as a developer and innovator.</p>
+            <h3 style="color: var(--accent); margin-bottom: 16px;">📄 Upload & Browse Documents</h3>
+            <p>Use the buttons below to upload your own documents or add files to this portfolio section. All uploads are viewable with preview and download options.</p>
+            <div style="margin-bottom: 16px; display:flex; flex-wrap:wrap; gap: 10px; align-items: center;">
+                <button id="upload-btn" class="btn btn-outline" type="button">+ Add Files</button>
+                <button id="toggle-preview-btn" class="btn" type="button" style="display:none;">Show Document Preview</button>
+            </div>
+            <input id="file-upload" type="file" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" multiple style="display:none;" />
+            <p id="file-upload-name" style="color: var(--muted); margin: 10px 0 0;"></p>
+            <div id="selected-files" style="margin-top: 16px;"></div>
+            <div id="cv-preview-container" style="display:none; width:100%; height:600px; border:1px solid var(--accent-dim); border-radius: 12px; overflow:hidden; margin-top:16px; background:var(--bg); display:flex; align-items:center; justify-content:center;">
+                <iframe id="cv-preview" title="File Preview" width="100%" height="100%" style="border:none; display:none;"></iframe>
+                <div id="image-preview" style="display:none; width:100%; height:100%; display:flex; align-items:center; justify-content:center; overflow:auto;"></div>
+            </div>
         </div>
-    </section>
 
-    <!-- FEATURED HIGHLIGHTS -->
-    <section style="padding: 30px 40px; max-width: 900px; margin: 0 auto;">
-        <h2 class="section-title"><span class="prompt"></span> Highlights</h2>
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 16px;">
-            <div class="card">
-                <h3 style="color: var(--accent); margin-bottom: 10px;">🎓 Education</h3>
-                <p>BSc Computer Science at University of Rwanda. Strong foundation in algorithms, data structures, databases, and modern software engineering practices.</p>
-            </div>
-            <div class="card">
-                <h3 style="color: var(--accent); margin-bottom: 10px;">💻 Frontend Development</h3>
-                <p>Experienced in building responsive, user-friendly web interfaces using HTML, CSS, JavaScript, and modern frameworks like React.</p>
-            </div>
-            <div class="card">
-                <h3 style="color: var(--accent); margin-bottom: 10px;">🚀 Backend & Databases</h3>
-                <p>Proficient in Python, Java, and database design with PostgreSQL and MySQL. Building scalable server-side solutions.</p>
-            </div>
-            <div class="card">
-                <h3 style="color: var(--accent); margin-bottom: 10px;">🤖 AI & ML Interest</h3>
-                <p>Actively exploring artificial intelligence and machine learning applications in modern software development.</p>
-            </div>
-            <div class="card">
-                <h3 style="color: var(--accent); margin-bottom: 10px;">🎯 Problem Solver</h3>
-                <p>Strong algorithmic foundation and competitive programming experience with focus on efficient, elegant solutions.</p>
-            </div>
-            <div class="card">
-                <h3 style="color: var(--accent); margin-bottom: 10px;">🌱 Always Learning</h3>
-                <p>Committed to staying updated with emerging technologies and best practices in the tech industry.</p>
-            </div>
+        <div class="card" style="margin-top: 20px;">
+            <h3 style="color: var(--accent); margin-bottom: 12px;">📋 Accepted File Types</h3>
+            <p>
+                <strong>🎯 Recommended:</strong><br>
+                • PDF files (ideal for CVs and formal documents)<br>
+                • Images (PNG, JPG, JPEG - for project screenshots, certificates)<br>
+                <br>
+                <strong>📝 Supported:</strong><br>
+                • DOC/DOCX files (Microsoft Word documents)
+            </p>
         </div>
     </section>
 
