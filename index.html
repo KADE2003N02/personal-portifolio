@@ -19,7 +19,7 @@
             <li><a href="#background">Background</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#others">Others</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="hamburger" id="hamburger">&#9776;</div>
@@ -218,34 +218,17 @@
         </div>
     </section>
 
-    <!-- GALLERY -->
-    <section id="gallery">
-        <h2 class="section-title"><span class="prompt"></span> Gallery</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="profile.jpg" alt="David KWIZERA">
-                <div class="gallery-overlay"><span>David KWIZERA</span></div>
+    <!-- OTHERS -->
+    <section id="others">
+        <h2 class="section-title"><span class="prompt"></span>Upload CV</h2>
+        <div class="card">
+            <p>Use this section to upload files and download my latest CV.</p>
+            <div class="btn-group" style="margin-bottom: 16px;">
+                <button type="button" class="btn" id="upload-btn">Upload File</button>
+                <a href="media/David-KWIZERA-CV.pdf" download class="btn btn-outline">Download CV</a>
             </div>
-            <div class="gallery-item">
-                <img src="profile.jpg" alt="GS Kayumbu Project">
-                <div class="gallery-overlay"><span>GS Kayumbu Project</span></div>
-            </div>
-            <div class="gallery-item">
-                <img src="profile.jpg" alt="Java Swing App">
-                <div class="gallery-overlay"><span>Java Swing App</span></div>
-            </div>
-            <div class="gallery-item">
-                <img src="profile.jpg" alt="Campus Life">
-                <div class="gallery-overlay"><span>Campus Life</span></div>
-            </div>
-            <div class="gallery-item">
-                <img src="profile.jpg" alt="Coding Session">
-                <div class="gallery-overlay"><span>Coding Session</span></div>
-            </div>
-            <div class="gallery-item">
-                <img src="profile.jpg" alt="Team Work">
-                <div class="gallery-overlay"><span>Team Work</span></div>
-            </div>
+                <input id="file-upload" type="file" accept=".pdf,.png,.jpeg,.doc,.docx" style="display: none;" />
+            <p id="file-upload-name" style="color: var(--muted); margin: 10px 0 0;">No file selected</p>
         </div>
     </section>
 
@@ -275,7 +258,7 @@
             <a href="+250788950833" title="Call Me"><i class="fas fa-phone"></i></a>
         </div>
         <p class="footer-copy">&copy; 2026 All Rights Reserved</p>
-        <p class="footer-built">Built by Kade Tech</p>
+        <p class="footer-built">Built by KadeTech</p>
     </footer>
 
     <script src="script.js"></script>
