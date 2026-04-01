@@ -198,3 +198,24 @@ if (fileUpload && fileUploadName) {
     });
 }
 
+// Dynamic title changer
+const titles = [
+    "Frontend Developer",
+    "Fullstack Developer", 
+    "Social Media Specialist",
+    "UI/UX Designer",
+    "Web Developer"
+];
+
+let titleIndex = 0;
+const dynamicTitle = document.getElementById('dynamic-title');
+
+if (dynamicTitle) {
+    setInterval(() => {
+        titleIndex = (titleIndex + 1) % titles.length;
+        const newTitle = "I'm a " + titles[titleIndex];
+        dynamicTitle.textContent = newTitle;
+        dynamicTitle.setAttribute('data-text', newTitle);
+    }, 3000); // Change every 3 seconds
+}
+
